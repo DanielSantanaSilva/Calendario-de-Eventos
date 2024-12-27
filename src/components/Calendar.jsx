@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import moment from 'moment'
 import api from '../utils/api'
-
+import './Calendar.css'
 const Calendar = () => {
   const [events, setEvents] = useState([])
   const navigate = useNavigate()
@@ -25,7 +25,7 @@ const Calendar = () => {
 
   return (
     <section>
-      <div style={{ position: 'relative', zIndex: 0 }}>
+      <div style={{ position: 'relative', zIndex: 0 }} className="calendar-container">
         <FullCalendar
           locale="pt-br"
           events={events}

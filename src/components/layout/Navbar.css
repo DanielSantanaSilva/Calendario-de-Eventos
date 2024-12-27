@@ -40,3 +40,26 @@
 .navbar li:hover > a {
   color: #fff;
 }
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1em;
+  }
+
+  .navbar_logo {
+    margin-bottom: 1em;
+  }
+
+  .navbar ul {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .navbar li {
+    width: auto;
+    text-align: center;
+    margin: 0.3em 0.5em;
+  }
+}
